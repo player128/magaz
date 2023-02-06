@@ -1,0 +1,214 @@
+body {
+    background: #1F2326;
+    min-height: 2000px;
+    overflow:hidden;
+}
+
+html {
+    height: 100%;
+    min-height: 2000px;
+}
+
+.elips1 {
+    position: absolute;
+    width: 1300px;
+    height: 1300px;
+    border-radius: 1300px;
+    left: -385px;
+    top: -711px;
+    background: #FF4656;
+}
+
+.elips2 {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    left: 1700px;
+    top: 74px;
+    background: #FF4656;
+}
+
+.elips3 {
+    position: absolute;
+    width: 268px;
+    height: 269px;
+    border-radius: 269px;
+    left: 1600px;
+    top: 182px;
+    background: #EFEFEF;
+}
+
+.elips4 {
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    border-radius: 98px;
+    left: 1800px;
+    top: 475px;
+    background: #505155;
+}
+
+.elips5 {
+    position: absolute;
+    width: 470px;
+    height: 470px;
+    border-radius: 470px;
+    left: 177px;
+    top: 800px;
+    background: #EFEFEF;
+}
+
+.block {
+    height: 500px;
+    width: 1500px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.top-block {
+    width: 100%;
+    height:30px;
+    background: #1F2326;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.content-block {
+    max-width: 1500px;
+    height: 470px;
+    opacity: 0.5;
+    background-color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-block {
+    width: 160px;
+    height: 180px;
+    background-color: grey;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+
+.item-block:nth-child(8n) {
+    margin-right:0;
+}
+
+.center-content-block {
+    max-width: 1427px;
+    min-width: 1427px;
+    height: 400px;
+    display: flex;
+    justify-content: start;
+    /* flex-flow: row-reverse wrap; */
+    flex-flow: wrap;
+    align-items: start;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.item-img {
+    width: 110px;
+    height:110px;
+    border: 1px solid black;
+    background-image: url(/magaz/img/phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item-cost, .item-name {
+    width: 110px;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+.add-button {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    text-align: center;
+    left: 1455px;
+    bottom: 9px;
+}
+
+.add-button a {
+    height: 25px;
+    width: 25px;
+    color: rgb(98, 138, 90);
+    font-size: 230%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar-track {
+	background-color: black; /*Цвет скролла*/
+} 
+::-webkit-scrollbar-thumb { 
+	border-radius: 5px; /*Закругление ползунка*/
+	background-color: white; /*Цвет ползунка*/
+} 
+::-webkit-scrollbar { 
+	width: 7px;  /*Толщина скролла*/
+}
+
+/* addProduct */
+
+form {
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: white;
+    position: relative;
+    z-index: 2;
+    background-color: grey;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.addProduct-block {
+    width: 300px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addProduct-block > p {
+    align-self: flex-start;
+}
+
+.addProduct-block button {
+    background-color: #5fd95d;
+    border-radius: 2px;
+    width: 90px;
+    height: 30px;
+    color:white;
+    border: 0;
+}
+
+.addProduct-block:last-child {
+    position: relative;
+    top: 86px;
+}
+
+.addProduct-block textarea {
+    color:gray;
+}
