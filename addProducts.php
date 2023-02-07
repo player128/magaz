@@ -1,8 +1,9 @@
 <?php
 require 'mysql.php';
+require 'config.php';
 
 echo 'THere';
-$mysql = new Mysql('localhost', 'root', '', 'magaz');
+$mysql = new Mysql($localhost, $user, $password, $db);
 //conmm
 $name = $_POST['name'];
 $cost = $_POST['cost'];
@@ -12,5 +13,7 @@ echo $_POST['cost'];
 $sql = "INSERT INTO `product`(`name`, `cost`, `weight`, `description`) VALUES ('$name', '$cost', '$weight', '$description')";
 echo $sql;
 $result = $mysql->query($sql);
-
-print_r($result);
+$url = __DIR__;
+header('Location: /magaz/index.php');
+//print_r($result);
+echo $url;
