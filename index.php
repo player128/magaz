@@ -1,10 +1,11 @@
-<?php
+<!-- <?php
     require 'mysql.php';
 ?>
 <html>
     <head>
         <meta charset="utf8">
         <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     </head>
     <body>
         <div class="elips1"></div>
@@ -27,7 +28,7 @@
                         $result = $mysql->query($sql);
                         while ($row = mysqli_fetch_array($result)) {
                     ?>
-                        <div class="item-block">
+                        <div class="item-block" productID = <?php echo $row['id'];?>>
                             <div class="item-img"></div>
                             <div class="item-name"><?php echo $row['name'];?></div>
                             <div class="item-cost"><?php echo $row['cost']. ' рублей';?></div>
@@ -38,5 +39,9 @@
                 </div>
             </div>
         </div>
+        <script src = 'product.js'></script>
     </body>
-</html>
+</html> -->
+<?php
+ini_set('display_errors', 1);
+require_once 'app/bootstrap.php';
