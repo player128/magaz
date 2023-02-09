@@ -9,6 +9,11 @@ html {
     min-height: 2000px;
 }
 
+.content {
+    position: relative;
+    z-index: 2;
+}
+
 .elips1 {
     position: absolute;
     width: 1300px;
