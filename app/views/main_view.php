@@ -1,7 +1,7 @@
 <div class="block">
     <div class="top-block">
         <div class="add-button">
-            <a href="addProduct.php">+</a>
+            <a href="./product">+</a>
         </div>
     </div>
     <div class="content-block">

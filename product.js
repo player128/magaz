@@ -10,5 +10,5 @@ $('.item-block').click(function() {
     //         console.log(response);
     //     }
     // });    
-    window.location.href = '/magaz/cardProduct.php/' + id;
+    window.location.href = '/magaz/card/show/' + id;
   });

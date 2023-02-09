@@ -7,7 +7,7 @@ class Controller_Product extends Controller
 		$this->view = new View();
 	}
 
-	function action_index()
+	function action_index($param = "")
 	{	
 		$this->view->generate('product_view.php', 'template_view.php');
 	}

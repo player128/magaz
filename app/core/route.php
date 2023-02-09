@@ -22,6 +22,12 @@ class Route
 			$action_name = $routes[3];//* было 2
 		}
 
+        // получаем  параметр
+		if ( !empty($routes[4]) )
+		{
+			$param = $routes[4];//* было 3
+		}
+
 		// добавляем префиксы
 		$model_name = 'Model_'.$controller_name;
 		$controller_name = 'Controller_'.$controller_name;
@@ -31,7 +37,7 @@ class Route
 
 		$model_file = strtolower($model_name).'.php';
 		$model_path = "app/models/".$model_file;
-		if(file_exists($model_path))
+		if (file_exists($model_path))
 		{
 			include "app/models/".$model_file;
 		}
@@ -39,9 +45,8 @@ class Route
 		// подцепляем файл с классом контроллера
 		$controller_file = strtolower($controller_name).'.php';
 		$controller_path = "app/controllers/".$controller_file;
-        // echo $controller_path;
-        // exit();
-		if(file_exists($controller_path))
+
+		if (file_exists($controller_path))
 		{
 			include "app/controllers/".$controller_file;
 		}
@@ -59,10 +64,11 @@ class Route
 		$controller = new $controller_name;
 		$action = $action_name;
 		
-		if(method_exists($controller, $action))
+		if (method_exists($controller, $action))
 		{
 			// вызываем действие контроллера
-			$controller->$action();
+            if (!empty($param)) $controller->$action($param);
+            else $controller->$action();
 		}
 		else
 		{

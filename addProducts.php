@@ -14,5 +14,5 @@ $sql = "INSERT INTO `product`(`name`, `cost`, `weight`, `description`) VALUES ('
 echo $sql;
 $result = $mysql->query($sql);
 
-header('Location: /magaz/index.php');
+header('Location: /magaz');
 //print_r($result);
