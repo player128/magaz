@@ -1,6 +1,6 @@
 <?php
-require 'config.php';
-require 'mysql.php';
+require 'app/config/config.php';
+require 'app/mysql/mysql.php';
 
 class Model_Card extends Model
 {

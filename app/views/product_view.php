@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="http://localhost/magaz/css/product.css">
 <form action="addProducts.php" method="POST">
     <div class="addProduct-block">
         <p>Имя</p>

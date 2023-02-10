@@ -1,0 +1,65 @@
+body {
+    background: #1F2326;
+    min-height: 2000px;
+    overflow:hidden;
+}
+
+html {
+    height: 100%;
+    min-height: 2000px;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.elips1 {
+    position: absolute;
+    width: 1300px;
+    height: 1300px;
+    border-radius: 1300px;
+    left: -385px;
+    top: -711px;
+    background: #FF4656;
+}
+
+.elips2 {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    left: 1700px;
+    top: 74px;
+    background: #FF4656;
+}
+
+.elips3 {
+    position: absolute;
+    width: 268px;
+    height: 269px;
+    border-radius: 269px;
+    left: 1600px;
+    top: 182px;
+    background: #EFEFEF;
+}
+
+.elips4 {
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    border-radius: 98px;
+    left: 1800px;
+    top: 475px;
+    background: #505155;
+}
+
+.elips5 {
+    position: absolute;
+    width: 470px;
+    height: 470px;
+    border-radius: 470px;
+    left: 177px;
+    top: 800px;
+    background: #EFEFEF;
+}

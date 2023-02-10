@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="http://localhost/magaz/css/card.css">
 <div class = "card">
     <div><?php echo $data['id'];?></div>
     <div><?php echo $data['name'];?></div>

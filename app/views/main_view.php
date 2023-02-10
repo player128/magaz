@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="http://localhost/magaz/css/main.css">
 <div class="block">
     <div class="top-block">
         <div class="add-button">
@@ -20,3 +21,4 @@
         </div>
     </div>
 </div>
+<script src = 'js/main.js'></script>

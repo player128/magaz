@@ -1,0 +1,45 @@
+form {
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: white;
+    position: relative;
+    z-index: 2;
+    background-color: grey;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.addProduct-block {
+    width: 300px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addProduct-block > p {
+    align-self: flex-start;
+}
+
+.addProduct-block button {
+    background-color: #5fd95d;
+    border-radius: 2px;
+    width: 90px;
+    height: 30px;
+    color:white;
+    border: 0;
+}
+
+.addProduct-block:last-child {
+    position: relative;
+    top: 86px;
+}
+
+.addProduct-block textarea {
+    color:gray;
+}
