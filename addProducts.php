@@ -1,8 +1,7 @@
 <?php
-require 'mysql.php';
-require 'config.php';
+require 'app/mysql/mysql.php';
+require 'app/config/config.php';
 
-echo 'THere';
 $mysql = new Mysql($host, $user, $password, $db);
 //conmm
 $name = $_POST['name'];

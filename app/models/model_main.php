@@ -1,5 +1,5 @@
 <?php
-require 'mysql.php';
+require 'app/mysql/mysql.php';
 
 class Model_Main extends Model
 {

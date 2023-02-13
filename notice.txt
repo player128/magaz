@@ -12,3 +12,4 @@
 10) Книга по  PHP;
 11) Глобальные переменные внутри класса?
 12) Файлы стиля и js сохраняются в кэше, изменения не срабатывают - https://ru.stackoverflow.com/questions/663651/%D0%9D%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82-css-%D1%81%D1%82%D0%B8%D0%BB%D0%B8-%D1%81-php ;
+15) cron job - https://tproger.ru/translations/guide-to-cron-jobs/ ;
