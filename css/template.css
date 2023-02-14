@@ -9,6 +9,13 @@ html {
     min-height: 2000px;
 }
 
+.top {
+    position: relative;
+    color: white;
+    z-index: 2;
+    text-align: end;
+}
+
 .content {
     position: relative;
     z-index: 2;

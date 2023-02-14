@@ -5,6 +5,7 @@ class Controller_Product extends Controller
 	{
 		// $this->model = new Model_Main();
 		$this->view = new View();
+		session_start();
 	}
 
 	function action_index($param = "")

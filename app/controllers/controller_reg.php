@@ -5,11 +5,12 @@ class Controller_Reg extends Controller
 	{
         $this->model = new Model_Reg();
 		$this->view = new View();
+        session_start();
 	}
 
 	function action_index()
 	{	
-        $data = "NULLSS";
+        $data = "";
         if (isset($_POST['login']) && isset($_POST['password'])) {
             if (!empty($_POST['login']) && !empty($_POST['password'])) {
                 $login = $_POST['login'];

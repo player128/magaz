@@ -6,6 +6,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     </head>
     <body>
+        <div class="top">
+            <?php
+                if (isset($_SESSION['name'])) {
+                    echo $_SESSION['name'];
+                } 
+                else echo "Войти";
+            ?>
+        </div>
         <div class="elips1"></div>
         <div class="elips2"></div> 
         <div class="elips3"></div>

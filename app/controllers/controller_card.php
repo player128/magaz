@@ -5,6 +5,7 @@ class Controller_Card extends Controller
 	{
 		$this->model = new Model_Card();
 		$this->view = new View();
+		session_start();
 	}
 
 	function action_show($param)
