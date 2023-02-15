@@ -18,7 +18,7 @@ class Controller_Auth extends Controller
 				if ($this->model->login($login, $password)) {
 					$_SESSION["name"] = $login;
 					$_SESSION["admin"] = $this->model->isAdmin();
-					//header('Location: /magaz');
+					header('Location: /magaz');
 				}
 				else
 				{

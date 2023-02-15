@@ -10,8 +10,16 @@
             <?php
                 if (isset($_SESSION['name'])) {
                     echo $_SESSION['name'];
+            ?>
+                <a href="http://localhost/magaz/logout">Выйти</a>
+            <?php        
                 } 
-                else echo "Войти";
+                else {
+            ?>
+            <a href="http://localhost/magaz/reg">Регистрация</a>
+            <a href="http://localhost/magaz/auth">Войти</a>
+            <?php
+                }
             ?>
         </div>
         <div class="elips1"></div>
