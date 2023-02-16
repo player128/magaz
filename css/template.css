@@ -17,11 +17,33 @@ html {
     z-index: 2;
     text-align: end;
     height: 30px;
+    display: flex;
+    justify-content: end;
+    background-color: grey;
 }
 
 .top a {
     text-decoration: none;
     color: white;
+}
+
+.cor {
+    height: 30px;
+    width: 30px;
+    background-image: url(http://localhost/magaz/img/cor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logout, .top-auth, .top-reg, .name, .cor {
+    height: 30px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logout a , .top-auth a, .top-reg a, .name a {
+    display: block;
 }
 
 .content {

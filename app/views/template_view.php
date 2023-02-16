@@ -9,18 +9,27 @@
         <div class="top">
             <?php
                 if (isset($_SESSION['name'])) {
-                    echo $_SESSION['name'];
             ?>
-                <a href="http://localhost/magaz/logout">Выйти</a>
+                <div class="name">
+                    <?php echo $_SESSION['name'];?>
+                </div>
+                <div class = "logout">
+                    <a href="http://localhost/magaz/logout">Выйти</a>
+                </div>
             <?php        
                 } 
                 else {
             ?>
-            <a href="http://localhost/magaz/reg">Регистрация</a>
-            <a href="http://localhost/magaz/auth">Войти</a>
+            <div class = "top-reg">1
+                <a href="http://localhost/magaz/reg">Регистрация</a>
+            </div>
+            <div class = "top-auth">
+                <a href="http://localhost/magaz/auth">Войти</a>
+            </div>
             <?php
                 }
             ?>
+            <div class="cor"></div>
         </div>
         <div class="elips1"></div>
         <div class="elips2"></div> 
