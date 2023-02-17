@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://localhost/magaz/css/createtable.css">
+<link rel="stylesheet" href="/magaz/css/createtable.css">
 <form action="" method="POST" class = "create-table-form">
     <div class="create-table-form-block">
         <div class="create-table-name">

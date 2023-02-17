@@ -13,6 +13,7 @@ class Controller_Createtable extends Controller
         if (isset($_POST['name']) && isset($_POST['field']) && isset($_POST['type']) && isset($_POST['field-length'])) {
             if(!empty($_POST['name']) && !empty($_POST['field']) && !empty($_POST['type']) && !empty($_POST['field-length'])) {
                 $this->model->create($_POST);
+                header("Location:\magaz");
             }
             else {
 

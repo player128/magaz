@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf8">
-        <link rel="stylesheet" href="http://localhost/magaz/css/template.css">
+        <link rel="stylesheet" href="/magaz/css/template.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     </head>
     <body>
@@ -20,7 +20,7 @@
                 } 
                 else {
             ?>
-            <div class = "top-reg">1
+            <div class = "top-reg">
                 <a href="http://localhost/magaz/reg">Регистрация</a>
             </div>
             <div class = "top-auth">

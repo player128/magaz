@@ -31,10 +31,6 @@ class Model_Createtable extends Model
             $request
         );    
         END;
-
-        
-        echo $sql;
-
         $result = $mysql->query($sql);
 		//return $data;
 	}
