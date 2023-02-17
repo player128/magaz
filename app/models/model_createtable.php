@@ -14,10 +14,6 @@ class Model_Createtable extends Model
 
         $request = "";
 
-        // echo "<pre>";
-        // print_r($type);
-        // echo "</pre>";
-
         for ($i = 0; $i < sizeof($field); $i++) {
             $request .= $field[$i] . " " . $type[$i][0] . "(" . $length[$i]  . ")";
             if ($i < sizeof($field) - 1) {
@@ -32,7 +28,13 @@ class Model_Createtable extends Model
         );    
         END;
         $result = $mysql->query($sql);
-		//return $data;
+
+        echo "<pre>";
+        print_r($result);
+        echo "</pre>";
+
+        if (empty($result)) return false;
+        return true;
 	}
 
     public function gettype()

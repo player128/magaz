@@ -10,5 +10,8 @@
     <div class="create-tabler-buttom">
         <button type="submit">Добавить</button>
     </div>
+    <div class="create-table-form-msg">
+        <?php echo $data;?>
+    </div>
 </form>
 <script src = 'js/createtable.js'></script>
